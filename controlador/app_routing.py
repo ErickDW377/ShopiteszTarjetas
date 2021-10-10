@@ -10,12 +10,6 @@ def incio():
 def tarjetas():    
     return  render_template('tarjetas/tarjetas.html')
 
-if __name__=='__main__':
-    app.run(debug=True)
-
-@app.route('/tarjetas')
-def tarjetas():
-    return  render_template('tarjetas/Registro.html')
 
 @app.route('/Registro')
 def Registro():
