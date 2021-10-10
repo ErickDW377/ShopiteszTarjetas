@@ -17,5 +17,10 @@ if __name__=='__main__':
 def tarjetas():
     return  render_template('tarjetas/Registro.html')
 
+@app.route('/Registro')
+def Registro():
+    return  render_template('./tarjetas/Registro.html')
 
 
+if __name__=='__main__':
+    app.run(debug=True)

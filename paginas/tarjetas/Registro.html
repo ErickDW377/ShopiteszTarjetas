@@ -7,16 +7,16 @@
 <body>
   <h1>REGISTRA TU TARJETA</h1>
    <table>
-        <label> Usuario:</label>
-        <input type="text" name="nombre" required placeholder="Nombre del usuario">
+        <label> ID:</label>
+        <input type="numero" name="id" required placeholder="ID Tarjeta">
         <br>
 
-        <label>Contraseña: </label>
-        <input type="password" name="password" maxlength="20" placeholder="Ingresa tu contraseña" required>
+        <label> ID Usuario:</label>
+        <input type="numero" name="id usuario" required placeholder="ID de usuario">
         <br>
 
        <label>Numero de Tarjeta:</label>
-       <input type="numero" name="id" required placeholder="Ingresa los 16 numeros de tu tarjeta ">
+       <input type="numero" name="numeroT" required placeholder="Ingresa los 16 numeros de tu tarjeta ">
         <br>
 
        <label> Saldo de Tarjeta:</label>
@@ -44,11 +44,20 @@
        <br>
 
        <label>Tipo de Tarjeta:</label>
-       <input type="text" name="nombre" required placeholder="¿De que tipo es tu tajeta?">
+       <input type="text" name="Tipo" required placeholder="¿De que tipo es tu tajeta?">
        <br>
-   </table>
- <button type="/tarejta">Registrar</button>
-  <a href="/inicio">Inicio</a>
 
+   </table>
+         <button>
+             <a type="/inicio">Inicio</a>
+         </button>
+
+          <button>
+             <a  type="/tarjetas">Registrar Tarjeta </a>
+          </button>
+
+          <button>
+              <a type="/tarjetas">Cancelar Tarjeta </a>
+          </button>
 </body>
 </html>
