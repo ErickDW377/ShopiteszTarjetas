@@ -8,17 +8,18 @@
     <h1>Listado de tarjetas</h1>
     <table border="5">
         <thead>
-            <th>idTarjeta</th>
-            <th>idUsuario</th>
-            <th>noTarjeta</th>
-            <th>saldo</th>
-            <th>emisor</th>
+            <th>Id</th>
+            <th>IdUsuario</th>
+            <th>Num. tarjeta</th>
+            <th>Saldo</th>
+            <th>Emisor</th>
             <th>cvc</th>
-            <th>annoVigencia</th>
-            <th>mesVigencia</th>
-            <th>estatus</th>
+            <th>Año Vigencia</th>
+            <th>Mes Vigencia</th>
+            <th>Estatus</th>
             <th>tipo</th>
             <th>eliminar</th>
         </thead>
+        
         </body>
 </html>
