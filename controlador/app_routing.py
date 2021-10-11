@@ -15,6 +15,10 @@ def tarjetas():
 def Registro():
     return  render_template('tarjetas/Registro.html')
 
+@app.route('/Editar')
+def Editar():
+    return  render_template('tarjetas/Editar.html')
+
 
 if __name__=='__main__':
     app.run(debug=True)
