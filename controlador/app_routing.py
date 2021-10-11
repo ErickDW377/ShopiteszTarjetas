@@ -19,6 +19,8 @@ def Registro():
 def Editar():
     return  render_template('tarjetas/Editar.html')
 
-
+@app.route('/Eliminar')
+def Eliminar():
+    return  render_template('tarjetas/Eliminar.html')
 if __name__=='__main__':
     app.run(debug=True)

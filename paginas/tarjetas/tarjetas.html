@@ -19,6 +19,7 @@
             <th> Mes Vigencia </th>
             <th> Estatus </th>
             <th> Tipo </th>
+            <th> Eliminar </th>
        </thead>
        {%for obj in [1,1,1,1,1,1,1,1]%}
        <tr >
@@ -33,6 +34,12 @@
             <td>04</td>
             <td></td>
             <td>debito</td>
+           <td class="no-pad-top no-pad-bot align-middle">
+                <div class="margin-l-15 checkbox checkboxStyle-table checkColorGreenLight">
+                  <input type="checkbox" class="tableid" name="tableid" id="tableid" class="click">
+                  <label class="s18 text-normal"></label>
+                </div>
+            </td>
            <td><button> <a href="/Editar">Editar</a></button></td>
        </tr>
        {% endfor %}
@@ -43,5 +50,8 @@
         <a href="/Registro">Agregar Tarjeta </a>
 
    </button>
+
+       <a href="/">Eliminar</a>
+
 </body>
 </html>
