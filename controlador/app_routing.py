@@ -13,7 +13,7 @@ def tarjetas():
 
 @app.route('/Registro')
 def Registro():
-    return  render_template('./tarjetas/Registro.html')
+    return  render_template('tarjetas/Registro.html')
 
 
 if __name__=='__main__':
