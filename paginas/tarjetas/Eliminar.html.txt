@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shoiptesz - Tienda en Linea</title>
+</head>
+<body>
+    <h1>Listado de tarjetas</h1>
+    <table border="5">
+        <thead>
+            <th>idTarjeta</th>
+            <th>idUsuario</th>
+            <th>noTarjeta</th>
+            <th>saldo</th>
+            <th>emisor</th>
+            <th>cvc</th>
+            <th>annoVigencia</th>
+            <th>mesVigencia</th>
+            <th>estatus</th>
+            <th>tipo</th>
+            <th>eliminar</th>
+        </thead>
+        </body>
+</html>
