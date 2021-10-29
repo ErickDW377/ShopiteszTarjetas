@@ -1,16 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>SHOPITESZ Tarjetas</title>
-</head>
-<body>
-    <button>
-        <a href="/">Inicio</a>
-    </button>
-   <h1>TARJETAS</h1>
+{%extends 'componentes/plantilla.html'%}
 
-   <table  border="5">
+
+{%block content%}
+
+
+<a href="/Registro">
+    <button>
+        Agregar Tarjeta 
+    </button>    
+</a>   
+   <table class="table table-striped text-center">
        <thead >
             <th> Id </th>
             <th> IdUsuario </th>
@@ -49,12 +48,6 @@
 
 
    </table>   
-   <button>
-        <a href="/Registro">Agregar Tarjeta </a>
+   
 
-   </button>
-
-       <a href="/">Eliminar</a>
-
-</body>
-</html>
+       {%endblock%}

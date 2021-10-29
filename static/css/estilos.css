@@ -1,0 +1,11 @@
+.encabezado{
+    background-color: rgb(255, 255, 255);
+    color: rgb(31, 29, 29);
+    font-family: fantasy;
+    font-size: x-large;
+    text-align: center;
+}
+
+.menu{
+    background-color: rgba(184, 184, 184, 0.76);
+}

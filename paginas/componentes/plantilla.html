@@ -1,0 +1,37 @@
+{% extends 'bootstrap/base.html'%}
+{% block styles %}
+    {{super()}}
+    <link href="{{url_for('static',filename='css/estilos.css')}}" rel="stylesheet">
+{% endblock %}
+{% block body %}
+<div class="encabezado">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-2">
+      <img src="{{url_for('static',filename='images/zorro.jpeg')}}">
+              </div>
+          <div class="col-md-8">
+            <h1>SHOPITEZ</h1>
+            <p>"Tienda en linea del ITESZ"</p>
+          </div>
+          <div class="col-md">
+               <img src="{{url_for('static',filename='images/tec.jpeg')}}">
+          </div>
+        </div>
+  </div>
+</div>
+{% block navbar %}
+<nav class="navbar navbar-default menu">
+    <div class="container-fluid">      
+      <ul class="nav navbar-nav">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="/tarjetas">Tarjetas</a></li>        
+      </ul>
+    </div>
+  </nav>
+  {%endblock%}
+{% block content %}
+
+
+{% endblock %}
+{% endblock %}

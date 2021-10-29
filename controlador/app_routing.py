@@ -1,7 +1,7 @@
 from flask import Flask,render_template,request
-
-app=Flask(__name__,template_folder='../paginas')
-
+from flask_bootstrap import Bootstrap
+app=Flask(__name__,template_folder='../paginas',static_folder='../static')
+Bootstrap(app)
 @app.route('/')
 def incio():    
     return  render_template('inicio/inicio.html')
