@@ -3,51 +3,62 @@
 
 {%block content%}
 
+<div class="margenes">
+<a href="/Registro" >
+    <button class="margenes2 boton-icono">
+        <img src="{{url_for('static',filename='images/agregar.png')}}">
+        Agregar Tarjeta
+    </button>
+</a>
+<table class="table table-striped">
+    <thead>
+        <th> Id </th>
+        <th> IdUsuario </th>
+        <th> Num. Tarjeta </th>
+        <th> Saldo </th>
+        <th> Emisor </th>
+        <th> cvc </th>
+        <th> Año Vigencia </th>
+        <th> Mes Vigencia </th>
+        <th> Estatus </th>
+        <th> Tipo </th>
+        <th></th>
+        <th></th>
+    </thead>
+    {%for obj in [1,1,1,1,1,1,1,1]%}
+    <tr>
 
-<a href="/Registro">
-    <button>
-        Agregar Tarjeta 
-    </button>    
-</a>   
-   <table class="table table-striped text-center">
-       <thead >
-            <th> Id </th>
-            <th> IdUsuario </th>
-            <th> Num. Tarjeta </th>
-            <th> Saldo </th>
-            <th> Emisor </th>
-            <th> cvc </th>
-            <th> Año Vigencia </th>
-            <th> Mes Vigencia </th>
-            <th> Estatus </th>
-            <th> Tipo </th>
-            <th> Eliminar </th>
-       </thead>
-       {%for obj in [1,1,1,1,1,1,1,1]%}
-       <tr >
-        
-            <td>{{obj}}</td>
-            <td>1</td>
-            <td>18221154</td>
-            <td>18000.00</td>
-            <td></td>
-            <td></td>
-            <td>2030</td>
-            <td>04</td>
-            <td></td>
-            <td>debito</td>
-           <td class="no-pad-top no-pad-bot align-middle">
-                <div class="margin-l-15 checkbox checkboxStyle-table checkColorGreenLight">
-                  <input type="checkbox" class="tableid" name="tableid" id="tableid" class="click">
-                  <label class="s18 text-normal"></label>
-                </div>
-            </td>
-           <td><button> <a href="/Editar">Editar</a></button></td>
-       </tr>
-       {% endfor %}
+        <td>{{obj}}</td>
+        <td>1</td>
+        <td>18221154</td>
+        <td>18000.00</td>
+        <td></td>
+        <td></td>
+        <td>2030</td>
+        <td>04</td>
+        <td></td>
+        <td>debito</td>
+        <td>
+            <a href="/Editar">
+                <button class="color-verde">
+                    Editar
+                </button>
+            </a>
+
+        </td>
+        <td>
+            <a href="">
+                <button class="boton-icono-only">
+                    <img class="tamañoicono" src="{{url_for('static',filename='images/eliminar.png')}}">
+                </button>
+            </a>
+        </td>
+
+    </tr>
+    {% endfor %}
 
 
-   </table>   
-   
+</table>
+</div>
 
-       {%endblock%}
+{%endblock%}

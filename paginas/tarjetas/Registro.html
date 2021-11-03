@@ -1,62 +1,55 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>SHOPITESZ Tarjetas Regristro</title>
-</head>
-<body>
-  <h1>REGISTRA TU TARJETA</h1>
-   <table>
+ {%extends 'componentes/plantilla.html'%}
+
+
+{%block content%}
+<div class="formulario">
+ <form action="/tarjetas">
+    <div class="form-group">
         <label> ID:</label>
-        <input type="numero" name="id" required placeholder="ID Tarjeta">
-        <br>
-
-        <label> ID Usuario:</label>
-        <input type="numero" name="idUsuario" required placeholder="ID de usuario">
-        <br>
-
-       <label>Numero de Tarjeta:</label>
-       <input type="numero" name="numeroT" required placeholder="Ingresa los 16 numeros de tu tarjeta ">
-        <br>
-
-       <label> Saldo de Tarjeta:</label>
-       <input type="numero" name="saldo" required placeholder="Saldo Actual">
-       <br>
-
-       <label>Emisor:</label>
-       <input type="text" name="emisor" required placeholder="Nombre del Banco">
-       <br>
-
-       <label> Codigo de Verificacion: </label>
-       <input type="numero" name="codigo" required placeholder="Codigo de Seguridad">
-       <br>
-
-       <label> Año de Vigencia: </label>
-       <input type="numero" name="añoVigencia" required placeholder=" Año de vigencia">
-       <br>
-
-       <label> Mes de Vigencia: </label>
-       <input type="numero" name="mesVigencia" required placeholder=" Mes de Vigencia">
-       <br>
-
-       <label>Estatus:</label>
-       <input type="checkbox" name="estatus" checked>
-       <br>
-
-       <label>Tipo de Tarjeta:</label>
-       <input type="text" name="tipo" required placeholder="¿De que tipo es tu tajeta?">
-       <br>
-
-   </table>         
-
-          <button>
-             <a  href="/tarjetas">Registrar </a>
-          </button>
-
-          <button>
-              <a href="/tarjetas">Cancelar </a>
-          </button>
-
-
-</body>
-</html>
+        <input class="form-control" type="numero" name="id" required placeholder="ID Tarjeta">
+    </div>
+    <div class="form-group">
+      <label>Usuario:</label>
+      <input class="form-control" type="numero" name="Usuario" required placeholder="Usuario">
+    </div>
+    <div class="form-group">
+      <label>Numero de Tarjeta:</label>
+       <input  class="form-control"  type="numero" name="numeroT" required placeholder="Ingresa los 16 numeros de tu tarjeta ">
+    </div>
+    <div class="form-group">
+      <label> Saldo de Tarjeta:</label>
+       <input class="form-control" type="numero" name="saldo" required placeholder="Saldo Actual">
+    </div>
+    <div class="form-group">
+      <label>Emisor:</label>
+      <input  class="form-control"  type="text" name="emisor" required placeholder="Nombre del Banco">
+    </div>
+    <div class="form-group">
+      <label> Codigo de Verificacion: </label>
+       <input  class="form-control" type="numero" name="codigo" required placeholder="Codigo de Seguridad">
+    </div>
+    <div class="form-group">
+      <label> Año de Vigencia: </label>
+       <input class="form-control" type="numero" name="añoVigencia" required placeholder=" Año de vigencia">
+    </div>
+    <div class="form-group">
+      <label> Mes de Vigencia: </label>
+       <input class="form-control" type="numero" name="mesVigencia" required placeholder=" Mes de Vigencia">
+    </div>  
+    <div class="form-group">
+      <label>Tipo de Tarjeta:</label>
+      <input class="form-control" type="text" name="tipo" required placeholder="¿De que tipo es tu tajeta?">
+    </div>
+    <div class="checkbox">
+      <label> Estatus: </label>
+      <label><input type="checkbox" name="estatus" required  >Activa</label>
+    </div>
+   
+    <button type="submit">Guardar</button>
+    <a href="/tarjetas">
+      <button type="button" class="color-danger">Cancelar</button>
+    </a>
+    
+  </form>
+</div>
+  {%endblock%}
