@@ -25,19 +25,19 @@
         <th></th>
         <th></th>
     </thead>
-    {%for obj in [1,1,1,1,1,1,1,1]%}
+    {%for obj in lista%}
     <tr>
 
-        <td>{{obj}}</td>
-        <td>1</td>
-        <td>18221154</td>
-        <td>18000.00</td>
-        <td></td>
-        <td></td>
-        <td>2030</td>
-        <td>04</td>
-        <td></td>
-        <td>debito</td>
+        <td>{{obj.idTarjeta}}</td>
+        <td>{{obj.idUsuario}}</td>
+        <td>{{obj.noTarjeta}}</td>
+        <td>{{obj.saldo}}</td>
+        <td>{{obj.emisor}}</td>
+        <td>{{obj.cvc}}</td>
+        <td>{{obj.anioVigencia}}</td>
+        <td>{{obj.mesVigencia}}</td>
+        <td>{{obj.estatus}}</td>
+        <td>{{obj.tipo}}</td>
         <td>
             <a href="/Editar">
                 <button class="color-verde">
